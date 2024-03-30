@@ -1,0 +1,244 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شرکت کنتورسازی آبسان</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ 
+    <link rel="icon" type="image/png" href="~/Pic/logo.ico">
+    <!-- For apple devices -->
+    <link rel="apple-touch-icon" type="image/png" href="~/Pic/logo.ico" />
+   
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="~/test/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        @*<a href="#" class="logo">شرکت کنتور سازی آبسان</a>*@
+
+        <nav class="navbar">
+            <a href="#home">خانه</a>
+            <a href="#products">محصولات</a>
+            <a href="#featured">تماس با ما</a>
+          
+        </nav>
+
+        @*<div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>*@
+
+    </header>
+
+    <!-- header section ends -->
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        @*<div class="slide-container active">
+            <div class="slide">
+                <div class="content">
+                    <span>کنتور آب</span>
+                    <h3>توضیحات</h3>
+                    <p>متن توضیحات </p>
+                    <a href="#" class="btn">افزودن به سبد خرید</a>
+                </div>
+                <div class="image">
+                    <img src="~/test/images/2.png" class="shoe"  alt="">
+                    <img src="~/test/images/absun logo.png"  class="text" alt="">
+                </div>
+            </div>
+        </div>*@
+
+    
+
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="content">
+                    @*<span>کفش زرد نایک</span>*@
+                    <h3>شرکت کنتورسازی آبسان</h3>
+                    <p>تولید کننده انواع کنتورهای مولتی جت.سینگل جت.توربینی.التراسونیک . الکترو مغناطیسی </p>
+                    @*<a href="#" class="btn">افزودن به سبد خرید</a>*@
+                </div>
+                <div class="image">
+                   
+                    <img src="~/Pic/web page1.png" class="shoe"/>
+                    <img src="~/test/images/absun logo.png"  class="text" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <span>کنتور آب</span>
+                    <h3>عنوان</h3>
+                    <p>متن توضیحات </p>
+                    <a href="#" class="btn">افزودن به سبد خرید</a>
+                </div>
+                <div class="image">
+                    <img src="~/test/images/2.png" class="shoe" alt="">
+                    <img src="~/test/images/absun logo.png" class="text" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+        <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+
+    </section>
+
+
+
+
+
+    <section class="category" id="category">
+
+        <h1 class="heading"> محصولات </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="~/Pic/1.gif" alt="">
+                <div class="content">
+                    <h3 style="text-align:center;">مولتی جت</h3>
+                    <a href="#" class="btn">جزئیات</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="~/Pic/2.jpg" alt="">
+                <div class="content">
+                    <h3 style="text-align:center;">سینگل جت</h3>
+                    <a href="#" class="btn">جزئیات</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="~/Pic/3.jpg" alt="">
+                <div class="content">
+                    <h3 style="text-align:center;">حجمی</h3>
+                    <a href="#" class="btn">جزئیات</a>
+                </div>
+            </div>
+            <div class="box">
+                @*<img src="~/images/cat4.jpg" alt="">*@
+                <div class="content">
+                    <h3 style="text-align:center;">التراسونیک</h3>
+                    <a href="#" class="btn">جزئیات</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading">اطلاعات تماس</h1>
+
+        <div class="row">
+
+
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21518.12517972794!2d48.41385172746139!3d36.70602391964966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ff6198b999580e1%3A0xf587f1700c17f964!2z2LTYsdqp2Kog2qnZhtiq2YjYsSDYs9in2LLbjCDYotio2LPYp9mG!5e0!3m2!1sfa!2snl!4v1649910605120!5m2!1sfa!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="">
+                <div class="inputBox">
+
+                    <label style="color:black;">آدرس: زنجان - شهرک صنعتی شماره یک - خیابان مرداد - نبش خیابان شهریور - پلاک 181</label>
+
+
+                </div>
+                <div class="inputBox">
+
+
+                    <label style="color:black;"><span>تلفن:</span> <a href="tel://02432222122">02432222122</a></label>
+                </div>
+                <div class="inputBox">
+
+
+                    <label style="color:black;"><span>ایمیل:</span> <a href="mailto:espinas1395@yahoo.com">espinas1395@yahoo.com</a></label>
+                </div>
+                <div class="inputBox">
+
+
+                    <label style="color:black;"><span>وب سایت:</span> <a href="http://espinas-co.net/">www.Espinas-co.net</a></label>
+                </div>
+
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        @*<div class="box-container">
+
+                <div class="box">
+                    <h3>درباره ما</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
+                </div>
+                <div class="box">
+                    <h3>مکان های شعبه</h3>
+                    <a href="#">تهران</a>
+                    <a href="#">مشهد</a>
+                    <a href="#">شیراز</a>
+                    <a href="#">اصفهان</a>
+                </div>
+                <div class="box">
+                    <h3>دسترسی سریع</h3>
+                    <a href="#">خانه</a>
+                    <a href="#">دسته بندی</a>
+                    <a href="#">محصولات</a>
+                    <a href="#">معامله</a>
+                    <a href="#">تماس با ما</a>
+                </div>
+                <div class="box">
+                    <h3>دنبال کردن</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">twitter</a>
+                    <a href="#">instagram</a>
+                    <a href="#">linked</a>
+                </div>
+
+            </div>*@
+
+        <h1 class="credit">مدیریت ارتباطات و امور بین الملل شرکت کنتور سازی آبسان</h1>
+
+    </section>
+
+    <!-- footer section ends -->
+    <!-- scroll top button  -->
+    <a href="#home" class="scroll-top fas fa-angle-up"></a>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+   
+    <script src="~/test/js/script.js"></script>
+
+</body>
+</html>

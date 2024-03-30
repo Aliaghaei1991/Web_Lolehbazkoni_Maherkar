@@ -1,0 +1,207 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    @*<meta name="viewport" content="width=device-width, initial-scale=1.0">*@
+
+
+    <meta name="description" content="لوله بازکنی ماهرکار شماره تماس 09392920180" />
+   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.00, maximum-scale=2.00, minimum-scale=0.80">
+    <meta name="keywords" content="@ViewBag.KeyWord" />
+
+    <meta name="author" content="علی آقائی" />
+    <title>@ViewBag.Title</title>
+    <meta property="og:site_name" content="لوله بازکنی ماهرکار">
+    <meta property="og:image:alt" content="لوله بازکنی @ViewBag.City ">
+    <meta property="article:section" content="لوله بازکنی @ViewBag.City">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="~/image_final/logo.png">
+    <!-- For apple devices -->
+    <link rel="apple-touch-icon" type="image/png" href="~/image_final/logo.ico" />
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="~/test/css/style.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {
+            margin: 0 -5px;
+        }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+        /* Responsive columns */
+        @@media screen and (max-width: 600px) {
+            .column {
+                width: 50%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Style the counter cards */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 8px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+    </style>
+
+  
+</head>
+<body>
+    <!-- header section starts  -->
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        @*<a href="#" class="logo">شرکت کنتور سازی آبسان</a>*@
+
+        <nav class="navbar">
+            <a href="/Home/Tehran">تهران</a>
+            <a href="/Home/Zanjan">زنجان</a>
+            <a href="/Home/Alborz">البرز</a>
+            <a href="/Home/Esfahan">اصفهان</a>
+            <a href="#category">خدمات</a>
+
+        </nav>
+
+        <div class="icons">
+
+            @*<a style="margin:-2px;" href="#">
+                    <i>
+
+                        <img id="tu" src="~/Pic/Tu.png" width="30" height="20" />
+                    </i>
+                </a>
+                    <a style="margin:-2px;" href="#"><i>
+
+                    <img id="en" src="~/Pic/En.png" width="30" height="20" />
+                        </i></a>
+                <a  style="margin:-2px;" href="#">
+                    <i>
+
+                        <img id="ir" style="border:3px solid;" src="~/Pic/ir.png" width="30" height="20" />
+                    </i>
+                </a>*@
+
+            <label>شماره تماس:</label>
+
+
+            <a style="color:blue;" href="tel:09392920180">09392920180</a>
+
+
+
+            @*<a  id="use_btn" style="margin-right:25px;" href="#" class="fas fa-user" title="ورود"></a>
+
+                <nav class="user_inf">
+
+                    <label> Name</label>
+                </nav>*@
+        </div>
+
+    </header>
+
+    <section class="home" id="home">
+
+
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="content">
+                    @*<span>کفش زرد نایک</span>*@
+                    @if (ViewBag.City == "ایران")
+                    {
+                        <h3>لوله باز کنی و تخلیه چاه در سراسر   @ViewBag.City</h3>
+                      
+                    }
+                    else
+                    {
+                        <h3>لوله باز کنی و تخلیه چاه در استان @ViewBag.City</h3>
+                    }
+                    <p> لوله‌ بازکنی ارزان و فوری در  @ViewBag.City</p>
+
+
+                    <h3><a style="color:blue;" href="tel:09392920180">09392920180</a></h3>
+
+
+                    @*<a href="#" class="btn">افزودن به سبد خرید</a>*@
+                </div>
+                <div class="image">
+
+                    <img src="~/PicLoleh/2.png" class="shoe" alt="لوله باز کنی @ViewBag.City" />
+                    @*<img src="~/test/images/absun logo.png" class="text" alt="">*@
+                </div>
+            </div>
+        </div>
+
+
+        @*<div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>کنتور آب</span>
+                        <h3>عنوان</h3>
+                        <p>متن توضیحات </p>
+                        <a href="#" class="btn">افزودن به سبد خرید</a>
+                    </div>
+                    <div class="image">
+                        <img src="~/test/images/2.png" class="shoe" alt="">
+                        <img src="~/test/images/absun logo.png" class="text" alt="">
+                    </div>
+                </div>
+            </div>*@
+
+        <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+        <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+
+    </section>
+
+    @RenderSection("body", false)
+
+    <!-- footer section ends -->
+    <!-- scroll top button  -->
+    <a href="#home" class="scroll-top fas fa-angle-up"></a>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+
+    <script src="~/test/js/script.js"></script>
+</body>
+</html>
