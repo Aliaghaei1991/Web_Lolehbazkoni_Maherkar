@@ -124,7 +124,7 @@
     <Content Include="js\script.js" />
     <Content Include="PicLoleh\2.png" />
     <Content Include="PicLoleh\Broken.png" />
-    <Content Include="PicLoleh\Kitchen sink.png" />
+    <Content Include="PicLoleh\Kitchensink.png" />
     <Content Include="PicLoleh\Orjansi.png" />
     <Content Include="PicLoleh\Shower.png" />
     <Content Include="PicLoleh\Toilet.png" />
@@ -169,6 +169,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Class_Db\Loleh_bazkoni.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

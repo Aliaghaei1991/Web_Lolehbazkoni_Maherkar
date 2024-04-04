@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Test1.Class_Db;
 
 namespace WebApplication1.Controllers
 {
@@ -16,7 +17,7 @@ namespace WebApplication1.Controllers
                 "،ترکیدگی لوله،لوله بازکنی حرفه ای،لوله باز کنی حرفه ای،لوله باز کنی";
            
 
-            ViewBag.Title = "لوله بازکنی شبانه روزی ماهرکار ارزان و فوری  - 09392920180 ";
+            ViewBag.Title = "لوله بازکنی شبانه روزی ماهر کار ارزان و فوری  - 09392920180 ";
             ViewBag.City = "ایران";
 
             return View();
@@ -31,6 +32,10 @@ namespace WebApplication1.Controllers
 
             ViewBag.Title = "لوله بازکنی شبانه روزی تهران ارزان و فوری  - 09392920180 ";
             ViewBag.City = " تهران";
+
+          
+            
+
 
             //لوله بازکنی شبانه روزی تهران ارزان و فوری 📞 - 09392920180 📞
             return View();

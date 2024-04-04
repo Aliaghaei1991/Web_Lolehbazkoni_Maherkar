@@ -1,4 +1,5 @@
-﻿
+﻿@using Test1.Class_Db;
+
 @{
     Layout = null;
 }
@@ -11,7 +12,7 @@
     <meta charset="UTF-8">
     @*<meta name="viewport" content="width=device-width, initial-scale=1.0">*@
 
-
+    <meta name="title" content="لوله بازکنی ماهر کار">
     <meta name="description" content="لوله بازکنی ماهرکار شماره تماس 09392920180" />
    
 
@@ -34,7 +35,7 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="~/test/css/style.css">
-   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   @*<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />*@
 
     <style>
         * {
@@ -193,12 +194,162 @@
 
     @RenderSection("body", false)
 
+
+    <section class="category" id="category">
+
+        <h1 class="heading"> خدمات لوله باز کنی </h1>
+
+        <div class="box-container">
+
+            @for (int i = 0; i < Loleh_bazkoni.title.Length; i++)
+            {
+
+                <div class="box">
+
+                    <img src=@Loleh_bazkoni.image[i] style="width:150px;height:145px;display: block;margin-left: auto;margin-right: auto;"  alt=@Loleh_bazkoni.title[i]>
+
+                    <h1 style="font-size:x-large;color:#090a2b;text-align:center;">
+
+                        @Loleh_bazkoni.title[i]
+                    </h1>
+
+                    <p style="font-size:medium;text-align:center;">
+                        @Loleh_bazkoni.body[i]
+                    </p>
+
+                    <div class="content">
+                        <h3 style="text-align:center;"><a href="tel:09392920180">تماس</a></h3>
+                        <a href="#" class="btn">جزئیات</a>
+
+                    </div>
+                </div>
+            }
+            @*<div class="box">
+                    <img style="width:150px;height:145px;display: block;margin-left: auto;margin-right: auto;" src="~/PicLoleh/Broken.png" alt="تشخیص ترکیدگی لوله">
+
+
+                    <h1 style="font-size:x-large;color:#090a2b;text-align:center;">تشخیص ترکیدگی لوله</h1>
+
+                    <p style="font-size:medium;text-align:center;">
+
+                        تشخیص ترکیدگی لوله فوری در تمام نقاط تهران با دستگاه و رفع نم. این دستگاه با ردیابی صدا و امواج ان محل دقیق ترکیدگی لوله را مشخص میکند به عبارت دیگر این دستگاه محل دقیق را حفر و مشکل را برطرف میکند.
+
+                    </p>
+
+                    <div class="content">
+                        <h3 style="text-align:center;"><a href="tel:09392920180">تماس</a></h3>
+                        <a href="#" class="btn">جزئیات</a>
+
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img style="width:150px;height:145px;display: block;margin-left: auto;margin-right: auto;" src="~/PicLoleh/Truck.png" alt="تخلیه چاه">
+
+
+                    <h1 style="font-size:x-large;color:#090a2b;text-align:center;">تخلیه چاه سراسری</h1>
+
+                    <p style="font-size:medium;text-align:center;">
+
+                        تخلیه چاه فوری در تمام نقاط استان تهران با قیمت پایین‌تر از اتحادیه با استفاده از جدیدترین امکانات روز دنیا ، از جمله پمپ های لجن کش قدرتمند پمپ لجن کش 3 فاز
+
+                    </p>
+
+                    <div class="content">
+                        <h3 style="text-align:center;"><a href="tel:09392920180">تماس</a></h3>
+                        <a href="#" class="btn">جزئیات</a>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <img style="width:150px;height:145px;display: block;margin-left: auto;margin-right: auto;" src="~/PicLoleh/Shower.png" alt="رفع گرفتگی چاه حمام">
+
+
+                    <h1 style="font-size:x-large;color:#090a2b;text-align:center;">رفع گرفتگی چاه حمام</h1>
+
+                    <p style="font-size:medium;text-align:center;">
+
+                        فنرزنی وبازکردن گرفتگی لوله فاضلاب حمام و وان بدون خرابی
+
+                    </p>
+
+                    <div class="content">
+                        <h3 style="text-align:center;"><a href="tel:09392920180">تماس</a></h3>
+                        <a href="#" class="btn">جزئیات</a>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <img style="width:150px;height:145px;display: block;margin-left: auto;margin-right: auto;" src="~/PicLoleh/Toilet.png" alt="رفع گرفتگی توالت">
+
+
+                    <h1 style="font-size:x-large;color:#090a2b;text-align:center;">رفع گرفتگی توالت</h1>
+
+                    <p style="font-size:medium;text-align:center;">
+
+                        رفع گرفتگی توالت فرنگی و معمولی بادستگاه های مخصوص
+
+                    </p>
+
+                    <div class="content">
+                        <h3 style="text-align:center;"><a href="tel:09392920180">تماس</a></h3>
+                        <a href="#" class="btn">جزئیات</a>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <img style="width:150px;height:145px;display: block;margin-left: auto;margin-right: auto;" src="~/PicLoleh/Kitchen sink.png" alt="رفع گرفتگی چاه آشپزخانه">
+
+
+                    <h1 style="font-size:x-large;color:#090a2b;text-align:center;">رفع گرفتگی چاه آشپزخانه</h1>
+
+                    <p style="font-size:medium;text-align:center;">
+
+                        رفع گرفتگی لوله های سینک ظرفشویی کفشوی اشپزخانه
+
+                    </p>
+                    <div class="content">
+                        <h3 style="text-align:center;"><a href="tel:09392920180">تماس</a></h3>
+                        <a href="#" class="btn">جزئیات</a>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <img style="width:150px;height:145px;display: block;margin-left: auto;margin-right: auto;" src="~/PicLoleh/Orjansi.png" alt="درآوردن اشیا ازچاه">
+
+
+                    <h1 style="font-size:x-large;color:#090a2b;text-align:center;">درآوردن اشیا ازچاه</h1>
+
+                    <p style="font-size:medium;text-align:center;">
+
+                        در آوردن تلفن همراه-سوئیچ-وزیورالات ازچاه با ابزارمخصوص
+
+                    </p>
+
+                    <div class="content">
+                        <h3 style="text-align:center;"><a href="tel:09392920180">تماس</a></h3>
+                        <a href="#" class="btn">جزئیات</a>
+
+                    </div>
+                </div>*@
+
+        </div>
+
+    </section>
+
+    @RenderSection("footer", false)
+
+
+
+
+    
+
     <!-- footer section ends -->
     <!-- scroll top button  -->
     <a href="#home" class="scroll-top fas fa-angle-up"></a>
 
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    @*<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>*@
 
     <!-- custom js file link  -->
 
